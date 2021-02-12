@@ -36,10 +36,34 @@ for (let i = 0; i < 2; i++) {
 }
 
 
+// let i = 0;
+// while (i != 5)  {
+//     let movieName = prompt('Один из последних просмотренных фильмов?', ''),
+//    movieScore = +prompt('На сколько оцените его?', '');
+//    if (movieName != null && movieScore != null && movieName != '' && movieScore != '' && movieName.length < 50) {
+//     personalMovieDB.movies[movieName] = movieScore;
+//     console.log('done');
+//     i++;
+//    } else {
+//     console.log('error');
+//     i--;
+//    }
+    
+// }
 
 
-
-
-
+// let i = 0;
+// do {
+//     let movieName = prompt('Один из последних просмотренных фильмов?', ''),
+//     movieScore = +prompt('На сколько оцените его?', '');
+//     if (movieName != null && movieScore != null && movieName != '' && movieScore != '' && movieName.length < 50) {
+//         personalMovieDB.movies[movieName] = movieScore;
+//         i++;
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+// } while (i != 5);
 
 console.log(personalMovieDB);
