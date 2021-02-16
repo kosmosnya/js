@@ -21,7 +21,7 @@ function learnJS(lang, callback) {
     callback();
 } 
 
-function done() {
+function done() { 
     console.log('Я прошел этот урок!');
 }
 
