@@ -51,7 +51,7 @@ const personalMovieDB = {
     },
     writeYourGenres: function() {
         for (let i = 1; i <= 3; i++) {
-            let writeYourGenresResult = prompt(`Ваш любимый жанр под номером ${i}`, '');
+            let writeYourGenresResult = prompt(`Ваш любимый жанр под номером ${i}`, '').toLowerCase();
                 if (writeYourGenresResult == null || writeYourGenresResult == '') {
                     i--;
                     console.log('error');
