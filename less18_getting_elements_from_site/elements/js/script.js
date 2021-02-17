@@ -22,4 +22,4 @@ hearts.forEach(item => {
 
 const oneHeart = document.querySelector('div'); // looks for first selector 
 
-console.log(oneHeart);
+console.log(oneHeart); 
