@@ -34,7 +34,7 @@ const deleteAdv = (arr) => {
     arr.forEach(item => {
         item.remove();
     }); 
-}
+};
 
 
 const poster = document.querySelector('.promo__bg'),
@@ -45,11 +45,11 @@ const makeChanges = () => {
     genre.textContent = 'ДРАМА';
 
 poster.style.cssText = `background:url("img/bg.jpg");`;
-}
+};
 
 const sortArr = (arr) => {
     arr.sort();
-}
+};
 
 const formSubmit = document.querySelector('form.add'),
       inputResult = formSubmit.querySelector('.adding__input'),
@@ -69,7 +69,7 @@ formSubmit.addEventListener('submit', (event => {
                   console.log('Добавляем ваш любимый фильм!');
               }
 
-            movieDB.movies.push(newMovie);
+            movieDB.movies.push(newMovie); // adding movies to array movieDB.movies
             sortArr(movieDB.movies);
             createMovieList(movieDB.movies, moviesList);
           }
@@ -113,4 +113,3 @@ createMovieList(movieDB.movies, moviesList);
 // moviesList.forEach(item => {
 //     item.textContent = movieDB.movies;
 // });
-
