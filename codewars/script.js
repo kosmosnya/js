@@ -1,14 +1,17 @@
 'use strict' // ES6
 
-
-function narcissistic(value) {
-    while (value != 0) {
-        let sum = 0;
-       let valueCount = value.toString().length
-       let digit = (value % 10);
-       value = Math.floor(value / 10);
-       sum = Math.pow(digit, valueCount);
-       console.log(digit, sum);
-    }
+var uniqueInOrder = function(iterable){
+    let res = iterable.split("");
+    let finalArray = [];
+   for (let i = 0; i < iterable.length; i++) {
+     if(res[i] != res[i+1]) {
+        finalArray.push(res[i]);
+     } else {
+         res.splice(i, 1);
+     }
+     
 }
-narcissistic(12345);
+console.log(finalArray);
+};
+
+uniqueInOrder('AAAABBBCCDAABBB'); 

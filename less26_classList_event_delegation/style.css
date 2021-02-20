@@ -1,0 +1,37 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+button {
+    width:2rem;
+    height:2rem;
+    margin:20px;
+    border-radius: 50%;
+    border-style:none;
+    background-color: white;
+}
+
+button:hover {
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
+
+}
+
+.red {
+    background-color:red;
+}
+
+.blue {
+    background-color:blue;
+}
+
+
+
+.btn-block {
+    height:50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+}
