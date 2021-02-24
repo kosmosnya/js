@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-box-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.timer-box {
+    min-width: 50px;
+    min-height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    border:1px solid black;
+    margin:5px;
+}
+
+.timer-box span {
+    font-size: 25px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+button {
+    margin: 0 10px;
+    padding: 5px;
+    min-width: 30px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    transition: background-color .3s;
+}
+
+
+
+button:hover {
+    background-color: #27ae60;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+    h1 {
+        margin: 1px 0;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .input-deadline {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    form {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+
+    label {
+        padding:0 1vw;
+    }
+
+    input[type="text"] {
+        margin:0;
+    }
+
+    button {
+        margin:0;
+    }
+
+    .timer-box-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin:20px 0;
+    }
+
+
+}
+
+
+
+/* border for timer */
+
