@@ -28,3 +28,32 @@ console.log(Object.keys(anyObjects).length); // keys to array
 
 Чтобы отсортировать объекты , добавьте их в массив,
 а затем отсортируйте по ключу: function(a, b){return a.key - b.key;}
+
+function test(myCondition) {
+    if (myCondition) {
+       return "It was true";
+    }
+    return "It was false";
+  }
+
+  let result = test(false);
+
+
+// use simple return construction instead of if
+
+// bad
+
+function isEqual(a,b) {
+    if (a === b) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// good
+
+function isEqual(a,b) {
+    return a === b;
+}
+

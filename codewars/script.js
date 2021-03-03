@@ -1,17 +1,16 @@
-'use strict' // ES6
+'use strict';
 
-var uniqueInOrder = function(iterable){
-    let res = iterable.split("");
-    let finalArray = [];
-   for (let i = 0; i < iterable.length; i++) {
-     if(res[i] != res[i+1]) {
-        finalArray.push(res[i]);
-     } else {
-         res.splice(i, 1);
-     }
-     
+function friend(friends) {
+    for (let i = 0; i < friends.length; i++) {
+        let upperChar = friends[i].charAt(0).toUpperCase();
+        if (!(!/\d/.test(friends[i]) && friends[i].length === 4 && upperChar === friends[i].charAt(0))) {
+            friends.splice(i, 1);
+            i--;
+        }
+    }
+    return friends;
 }
-console.log(finalArray);
-};
 
-uniqueInOrder('AAAABBBCCDAABBB'); 
+friend(["Ryan", "Kieran", "Mark", "123", "4"]);
+
+//console.log(res);
