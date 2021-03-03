@@ -18,16 +18,16 @@ console.log(Object.keys(anyObjects).length); // keys to array
 
 // сортировка массивов
 
-Для сортировки чисел
-в порядке возрастания (1, 2, 3...) : function(a, b){return a - b;}
-в порядке убывания (9, 8, 7...) : function(a, b){return b - a;}
+// Для сортировки чисел
+// в порядке возрастания (1, 2, 3...) : function(a, b){return a - b;}
+// в порядке убывания (9, 8, 7...) : function(a, b){return b - a;}
 
-Сортировка строк
-в порядке возрастания (A, B, C...) : function(a, b){return a > b? 1: -1;}
-в порядке убывания (Z, Y, X...): function(a, b){return b > a? 1: -1;}
+// Сортировка строк
+// в порядке возрастания (A, B, C...) : function(a, b){return a > b? 1: -1;}
+// в порядке убывания (Z, Y, X...): function(a, b){return b > a? 1: -1;}
 
-Чтобы отсортировать объекты , добавьте их в массив,
-а затем отсортируйте по ключу: function(a, b){return a.key - b.key;}
+// Чтобы отсортировать объекты , добавьте их в массив,
+// а затем отсортируйте по ключу: function(a, b){return a.key - b.key;}
 
 function test(myCondition) {
     if (myCondition) {
